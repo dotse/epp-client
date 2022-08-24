@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+iis-1.0.xsd - Allow validation of all EPP commands against the same schema file
+
+Copyright (c) .SE, The Internet Infrastructure Foundation (2009) <hostmaster@iis.se>
+
+All rights reserved.
+
+$Id$
+$Date$
+$LastChangedBy$
+-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <annotation>
+        <documentation>
+            Extensible Provisioning Protocol v1.0
+            Import file for validation
+        </documentation>
+    </annotation>
+
+    <!-- **************************************************************** -->
+    <!-- Import common element types.                                     -->
+
+    <import namespace="urn:ietf:params:xml:ns:eppcom-1.0"   schemaLocation="eppcom-1.0.xsd"  />
+    <import namespace="urn:ietf:params:xml:ns:epp-1.0"      schemaLocation="epp-1.0.xsd"     />
+    <import namespace="urn:ietf:params:xml:ns:host-1.0"     schemaLocation="host-1.0.xsd"    />
+    <import namespace="urn:ietf:params:xml:ns:contact-1.0"  schemaLocation="contact-1.0.xsd" />
+    <import namespace="urn:ietf:params:xml:ns:domain-1.0"   schemaLocation="domain-1.0.xsd"  />
+    <import namespace="urn:ietf:params:xml:ns:secDNS-1.0"   schemaLocation="secDNS-1.0.xsd"  />
+    <import namespace="urn:ietf:params:xml:ns:secDNS-1.1"   schemaLocation="secDNS-1.1.xsd"  />
+    <import namespace="urn:se:iis:xml:epp:iis-1.2"          schemaLocation="iis-1.2.xsd"     />
+    <import namespace="urn:se:iis:xml:epp:registryLock-1.0" schemaLocation="registryLock-1.0.xsd" />
+
+</schema>
