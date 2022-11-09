@@ -65,6 +65,7 @@ type DomainCreate struct {
 	Registrant     string    `xml:"registrant"`
 	DsData         []*DsData `xml:"dsData"`
 	RegistryLock   string    `xml:"unlock"`
+	EIDVerified    bool      `xml:"eid"`
 	ClTrID         string    `xml:"clTrID"`
 }
 

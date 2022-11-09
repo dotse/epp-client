@@ -207,7 +207,6 @@ var CommandConfig = []*Command{
 				"urn:ietf:params:xml:ns:domain-1.0",
 			},
 			ExtensionNamespaces: []string{
-				"urn:ietf:params:xml:ns:secDNS-1.0",
 				"urn:ietf:params:xml:ns:secDNS-1.1",
 				"urn:se:iis:xml:epp:iis-1.2",
 				"urn:se:iis:xml:epp:registryLock-1.0",
