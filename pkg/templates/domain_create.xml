@@ -31,8 +31,8 @@
         <domain:registrant>{{.Registrant}}</domain:registrant>
       </domain:create>
     </create>
-    {{- if or .DsData .RegistryLock}}
-    <extension>
+    {{- if or .DsData .RegistryLock .EIDVerified}}
+    <extension xmlns:iis="urn:se:iis:xml:epp:iis-1.2" xsi:schemaLocation="urn:se:iis:xml:epp:iis-1.2 iis-1.2.xsd">
       {{- if .DsData}}
       <secDNS:create xmlns:secDNS="urn:ietf:params:xml:ns:secDNS-1.1" xsi:schemaLocation="urn:ietf:params:xml:ns:secDNS-1.1 secDNS-1.1.xsd">
         {{- range $d := .DsData}}
@@ -50,6 +50,7 @@
         <rl:unlock>{{.RegistryLock}}</rl:unlock>
       </rl:lock>
       {{- end}}
+      <iis:eid verified="{{BoolToInt .EIDVerified}}"/>
     </extension>
     {{- end}}
     {{- if .ClTrID}}

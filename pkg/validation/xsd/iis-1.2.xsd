@@ -46,6 +46,12 @@ $LastChangedBy: Ulrich Wisser $
       </xs:sequence>
     </xs:complexType>
 
+    <xs:element name="eid">
+        <xs:complexType>
+            <xs:attribute name="verified" type="xs:boolean" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
     <!-- **************************************************************** -->
     <!--                 extension to update                              -->
     <!--                                                                  -->
