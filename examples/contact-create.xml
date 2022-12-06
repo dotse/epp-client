@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+  <command>
+    <create>
+      <contact:create xmlns:contact="urn:ietf:params:xml:ns:contact-1.0">
+        <contact:id>contact1</contact:id>
+        <contact:postalInfo type="loc">
+          <contact:name>Anders Andersson</contact:name>
+          <!-- <contact:org>My Company</contact:org> -->
+          <contact:addr>
+            <!-- <contact:street>My street</contact:street> -->
+            <!-- <contact:street>62</contact:street> -->
+            <!-- <contact:street>Home</contact:street> -->
+            <contact:city>Stockholm</contact:city>
+            <!-- <contact:sp>Stockholm</contact:sp> -->
+            <!-- <contact:pc>12345</contact:pc> -->
+            <contact:cc>SE</contact:cc>
+          </contact:addr>
+        </contact:postalInfo>
+        <!-- <contact:postalInfo type="int">
+          <contact:name>Anna Andersson</contact:name>
+          <!-- <contact:org>My Company</contact:org> -->
+          <!-- <contact:addr>
+            <!-- <contact:street>My street</contact:street> -->
+            <!-- <contact:street>62</contact:street> -->
+            <!-- <contact:street>Home</contact:street> -->
+            <!-- <contact:city>Uppsala</contact:city>
+            <!-- <contact:sp>Uppland</contact:sp> -->
+            <!-- <contact:pc>12345</contact:pc> -->
+            <!-- <contact:cc>SE</contact:cc>
+          </contact:addr>
+        </contact:postalInfo> -->
+        <!-- <contact:voice x="1234">+46.12345678</contact:voice> -->
+        <!-- <contact:fax>+46.12345678</contact:fax> -->
+        <contact:email>test@test.se</contact:email>
+        <!-- <contact:disclose flag="0">
+          <contact:voice/>
+          <contact:email/>
+        </contact:disclose> -->
+      </contact:create>
+    </create>
+    <!-- <extension>
+      <iis:create xmlns:iis="urn:se:iis:xml:epp:iis-1.2">
+        <iis:orgno>[SE]1234-1234</iis:orgno>
+        <iis:vatno>SE123456789</iis:vatno>
+      </iis:create>
+    </extension> -->
+    <clTRID>ABC-12345</clTRID>
+  </command>
+</epp>

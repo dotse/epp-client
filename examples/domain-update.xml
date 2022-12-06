@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <command>
+    <update>
+      <domain:update xmlns:domain="urn:ietf:params:xml:ns:domain-1.0" xsi:schemaLocation="urn:ietf:params:xml:ns:domain-1.0 domain-1.0.xsd">
+        <domain:name>foo.se</domain:name>
+        <!-- <domain:add>
+          <domain:ns>
+            <domain:hostObj>foo.ns</domain:hostObj>
+          </domain:ns>
+          <domain:status s="clientHold" lang="en">Payment overdue.</domain:status>
+        </domain:add> -->
+        <!-- <domain:rem>
+          <domain:ns>
+            <domain:hostObj>foo.ns</domain:hostObj>
+          </domain:ns>
+          <domain:status s="clientHold" lang="en"></domain:status>
+        </domain:rem> -->
+        <domain:chg>
+          <domain:registrant>contact1</domain:registrant>
+          <domain:authInfo>
+            <domain:pw>123456789Aa!</domain:pw>
+          </domain:authInfo>
+        </domain:chg>
+      </domain:update>
+    </update>
+    <!-- <extension>
+      <!-- <secDNS:update xmlns:secDNS="urn:ietf:params:xml:ns:secDNS-1.1" xsi:schemaLocation="urn:ietf:params:xml:ns:secDNS-1.1 secDNS-1.1.xsd">
+        <secDNS:add>
+          <secDNS:dsData>
+            <secDNS:keyTag>12345</secDNS:keyTag>
+            <secDNS:alg>3</secDNS:alg>
+            <secDNS:digestType>1</secDNS:digestType>
+            <secDNS:digest>49FD46E6KL455C55D4AC</secDNS:digest>
+          </secDNS:dsData>
+        </secDNS:add>
+        <secDNS:rem>
+          <secDNS:all>1</secDNS>
+          <secDNS:dsData>
+            <secDNS:keyTag>12345</secDNS:keyTag>
+            <secDNS:alg>3</secDNS:alg>
+            <secDNS:digestType>1</secDNS:digestType>
+            <secDNS:digest>49FD46KL454B45C55D4AC</secDNS:digest>
+          </secDNS:dsData>
+        </secDNS:rem>
+      </secDNS:update> -->
+      <!-- <rl:lock xmlns:rl="urn:se:iis:xml:epp:registryLock-1.0" xsi:schemaLocation="urn:se:iis:xml:epp:registryLock-1.0 registryLock-1.0.xsd">
+        <rl:unlock>outofband</rl:unlock>
+      </rl:lock> -->
+      <!-- <iis:update xmlns:iis="urn:se:iis:xml:epp:iis-1.2" xsi:schemaLocation="urn:se:iis:xml:epp:iis-1.2 iis-1.2.xsd">
+        <iis:clientDelete atExpDate="false">1</iis:clientDelete>
+      </iis:update>
+    </extension> -->
+    <clTRID>ABC-12345</clTRID>
+  </command>
+</epp>
